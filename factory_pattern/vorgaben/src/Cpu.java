@@ -1,5 +1,5 @@
 public class Cpu {
-    private int kerne;
+    private int cores;
     private float frequency;
 
     public Cpu(int cores, float frequency) {
