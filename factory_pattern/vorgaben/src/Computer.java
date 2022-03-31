@@ -1,6 +1,6 @@
 public abstract class Computer {
     private Ram ram;
-    Drive drive;
+    private Drive drive;
 
     public Computer(Ram ram, Drive drive) {
         this.ram = ram;
