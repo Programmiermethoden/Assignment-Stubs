@@ -1,5 +1,5 @@
 public abstract class Computer {
-    Ram ram;
+    private Ram ram;
     Drive drive;
 
     public Computer(Ram ram, Drive drive) {
