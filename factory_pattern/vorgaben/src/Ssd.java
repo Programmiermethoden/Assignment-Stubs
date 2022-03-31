@@ -1,5 +1,5 @@
 public class Ssd extends Drive {
-    public Ssd(int StorageSize) {
-        super(StorageSize);
+    public Ssd(int storageSize) {
+        super(storageSize);
     }
 }

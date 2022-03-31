@@ -1,4 +1,4 @@
-public class Factory {
+public class ComputerFactory {
     public static Computer buildComputer() {
         return null;
     }
