@@ -3,7 +3,7 @@ public class Cpu {
     private float frequency;
 
     public Cpu(int cores, float frequency) {
-        this.kerne = kerne;
+        this.cores = cores;
         this.frequency = frequency;
     }
 
