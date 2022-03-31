@@ -7,8 +7,8 @@ public class Cpu {
         this.frequency = frequency;
     }
 
-    public int getKerne() {
-        return kerne;
+    public int getCores() {
+        return cores;
     }
 
     public float getFrequency() {
