@@ -1,12 +1,11 @@
 public abstract class Drive {
+    private int storageSize;
 
-    private int StorageSize;
-
-    public Drive(int StorageSize) {
-        this.StorageSize = StorageSize;
+    public Drive(int storageSize) {
+        this.storageSize = storageSize;
     }
 
     public int getStorageSize() {
-        return StorageSize;
+        return storageSize;
     }
 }
