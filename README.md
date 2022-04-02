@@ -2,7 +2,7 @@
 
 ## Overview
 
-This repo provides stubs for the exercises/homework for https://github.com/PM-Dungeon/Lecture ...
+Here you can find all the stubs for the exercises/homework for https://github.com/PM-Dungeon/Lecture ...
 
 ## Contributing
 
