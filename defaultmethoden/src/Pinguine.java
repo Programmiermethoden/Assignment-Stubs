@@ -1,19 +1,19 @@
 public class Pinguine {
 
     public interface Vogel {
-        default void schwimmt() {
+        default void schwimmen() {
             System.out.println("Ich fliege. Schwimmen ist für Pinguine!");
         }
     }
 
     public interface Seevogel extends Vogel {
-        default void schwimmt() {
+        default void schwimmen() {
             System.out.println("Ich paddle vor mich hin.");
         }
     }
 
     public interface Grosspinguine extends Vogel, Seevogel {
-        default void schwimmt() {
+        default void schwimmen() {
             System.out.println("Ich tauche gern.");
         }
     }
