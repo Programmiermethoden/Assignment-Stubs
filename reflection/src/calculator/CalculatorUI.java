@@ -1,13 +1,12 @@
 package calculator;
 
-import operations.IOperation;
-
-import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
 import java.util.Map;
+import javax.swing.*;
+import operations.IOperation;
 
 public class CalculatorUI extends JFrame {
 
@@ -35,7 +34,6 @@ public class CalculatorUI extends JFrame {
         } else {
             fileSelector();
         }
-
     }
 
     private void init() {
@@ -59,36 +57,39 @@ public class CalculatorUI extends JFrame {
         panel.add(operationSelection);
         panel.add(numberTwo);
         JButton solutionButton = new JButton("=");
-        solutionButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                try {
-                    solution.setText("" + calculate());
-                } catch (NumberFormatException ex) {
-                    System.out.println("Invalid input.");
-                }
-                update();
-            }
-        });
+        solutionButton.addActionListener(
+                new ActionListener() {
+                    @Override
+                    public void actionPerformed(ActionEvent e) {
+                        try {
+                            solution.setText("" + calculate());
+                        } catch (NumberFormatException ex) {
+                            System.out.println("Invalid input.");
+                        }
+                        update();
+                    }
+                });
         panel.add(solutionButton);
         panel.add(solution);
         JButton updateButton = new JButton("reload operations");
-        updateButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                updateOperationSelection();
-                update();
-            }
-        });
+        updateButton.addActionListener(
+                new ActionListener() {
+                    @Override
+                    public void actionPerformed(ActionEvent e) {
+                        updateOperationSelection();
+                        update();
+                    }
+                });
         JButton loadButton = new JButton("Load from new directory");
-        loadButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                fileSelector();
-                updateOperationSelection();
-                update();
-            }
-        });
+        loadButton.addActionListener(
+                new ActionListener() {
+                    @Override
+                    public void actionPerformed(ActionEvent e) {
+                        fileSelector();
+                        updateOperationSelection();
+                        update();
+                    }
+                });
         add(BorderLayout.NORTH, panel);
         JPanel southPanel = new JPanel();
         southPanel.add(updateButton);

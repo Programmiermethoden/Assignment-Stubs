@@ -11,6 +11,6 @@ public class OperationLoader {
      * @return a map with the operations and their names, or an empty map if none were found
      */
     public static Map<String, IOperation> loadOperations(File directory) {
-    //TODO
+        // TODO
     }
 }
