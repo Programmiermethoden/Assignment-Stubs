@@ -1,4 +1,3 @@
-package vorgaben;
 
 public class Katze {
     private String name;

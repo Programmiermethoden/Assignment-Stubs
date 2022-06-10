@@ -1,4 +1,3 @@
-package vorgaben;
 
 /**
  * @param xSize Breite des Kartons
