@@ -7,7 +7,7 @@ public class KatzenCafe {
     private List<Katze> katzen;
 
     /**
-     * Füge eine Katze dem Kaffee hinzu
+     * Füge eine Katze dem Café hinzu
      *
      * @param katze
      */
@@ -20,7 +20,7 @@ public class KatzenCafe {
     /**
      * @param minGewicht Gewicht Untergrenze
      * @param maxGewicht Gewicht Obergrenze
-     * @return Die erste Katze, dessen Gewicht zwischen den Werten liegt
+     * @return Die erste Katze im Café, deren Gewicht zwischen den Werten liegt
      */
     public Katze getKatzeByGewicht(float minGewicht, float maxGewicht) {
         if (katzen == null) return null;
@@ -34,7 +34,7 @@ public class KatzenCafe {
 
     /**
      * @param box Box zu der die passenden Katzen gesucht werden
-     * @return Alle Katzen dessen Lieblingsbox übergeben wurde
+     * @return Alle Café-Katzen, deren Lieblingsbox übergeben wurde
      */
     public List<Katze> getKatzenZurBox(Box box) {
         if (katzen == null) return null;
